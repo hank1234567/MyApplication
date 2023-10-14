@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/videoPlayer"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:src="@drawable/setting"
+
+        />
+
+    <VideoView
+        android:id="@+id/videoPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="391dp"
+        android:layout_weight="0.1" />
+
+    <TextView
+        android:id="@+id/txtdisplay"
+        android:layout_width="match_parent"
+        android:layout_height="377dp"
+        android:layout_weight="0.3"
+        android:text="ChatGPT 回傳的文字"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.80"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_role"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="輸入角色"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edit_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="輸入問題"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edit_lang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="設定語言"
+            android:inputType="text"
+            android:minHeight="48dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.85"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Play Video" />
+    </LinearLayout>
+
+
+</LinearLayout>
